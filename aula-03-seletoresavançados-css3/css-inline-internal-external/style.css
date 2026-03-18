@@ -1,0 +1,54 @@
+/* CSS externo */
+
+/* Estilos universais */
+* {
+    margin:0;
+    padding:0;
+}
+/* estilos gerais */
+body{
+    font-family: "Arial";
+    background-color: rgb(19, 38, 55);
+    color: rgb(176, 219, 237);
+    padding: 20px;
+    line-height: 1.6;
+}
+.destaque {
+    background-color: rgb(219, 238, 255);
+    color: rgb(22, 16, 64);
+    padding: 10px;
+    border-left: 5px solid rgb(75, 75, 133);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box{
+    width: 530px;
+    background-color: rgb(75, 75, 133);
+    padding: 30px;
+    text-align: center;
+    border: 2px dashed blueviolet;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Sera executado quando o usuario passar o mouse sobre a caixa */
+.box:hover{
+    background-color: rgb(219, 238, 255);
+    color: rgb(22, 16, 64);
+    border-color: rgb(75, 75, 133);
+    transform: scale(0.8);
+}
+.btn-download{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+.btn-download:hover {
+    background-color: aliceblue;
+}
