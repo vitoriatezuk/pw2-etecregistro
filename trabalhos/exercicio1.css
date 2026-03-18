@@ -1,0 +1,95 @@
+body{
+    background-image: url('image.png');
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color:rgb(161, 114, 76);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 20 px;
+}
+nav{
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}   
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(56, 21, 21);
+    font-size: large;
+}
+nav hr {
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid rgb(161, 114, 76);
+}   
+main {
+    padding: 20px;
+}
+main img {
+    height: auto;
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+main hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 3px solid rgb(161, 114, 76);
+}
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+article {
+    background-color: rgb(161, 114, 76);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid  rgb(31, 29, 29);
+    color: #ffffff;
+    text-align: center;
+    width: 60%;     
+    margin: 20px auto;
+}
+main h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+aside {
+    background-color: rgb(161, 114, 76);
+    padding: 15px;
+    border-radius: 10px;
+    border : 1 px solid rgb(31, 29, 29);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer em {
+    font-style: italic;
+    color: rgb(255, 255, 255);}
+ hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 3px solid rgb(161, 114, 76);
+}
