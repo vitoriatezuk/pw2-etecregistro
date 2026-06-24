@@ -1,38 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Aroma - Os melhores cafés Especiais </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header com FlexBox -->
-   <header>
-    <div class="Container">
-        <div class ="nav">
-            <div class="logo">
-                ☕ Café Aroma
+    <!-- Header com FlexBox -->
+    <header>
+        <div class="Container">
+            <div class="nav">
+                <div class="logo">
+                    ☕ Café Aroma
+                </div>
+                <nav>
+                    <a href="#home">Inicio</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contatos">Contatos</a>
+                </nav>
             </div>
-            <nav>
-                <a href="#home">Inicio</a>
-                <a href="#produtos">Produtos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contatos">Contatos</a>
-            </nav>
-        </div>
-   </header>
+    </header>
 
-   <main>
-   <!-- Hero section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Desperte Seus Sentidos</h1>
-            <p>Café especiais selecionados oara você começar o dia com energia e sabor </p>
-            <button class="btn-primary">Conheça Nossos Cafés</button>
-        </div>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Desperte Seus Sentidos</h1>
+                <p>Café especiais selecionados oara você começar o dia com energia e sabor </p>
+                <button class="btn-primary">Conheça Nossos Cafés</button>
+            </div>
 
-    </section>
-   </main>
+        </section>
+        <!-- SEÇÃO DE PRODUTOS  -->
+        <section class="produtos" id="produtos">
+            <div class="container">
+                <h2 class="section-title">Nossos Cafés</h2>
+                <!-- DIV PAI DOS CARDS -->
+                <div class="cards">
+                    <!-- CARD 01 -->
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=300&fit=crop"
+                            alt="Café Expresso">
+                        <!-- TEXTO DO CARD -->
+                        <div class="card-content">
+                            <h3>Expresso Intenso</h3>
+                            <p>sabor marcante e encoroado, perfeito para quem aprecia café forte.</p>
+                            <span class="price">R$ 18,90</span>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <!-- CARD 02 -->
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop"
+                            alt="Cappuccino Cremoso">
+                        <!-- TEXTO DO CARD -->
+                        <div class="card-content">
+                            <h3>Cappuccino Cremoso </h3>
+                            <p>Combinação Perfeita de café, leite vaporizado e espuma aveludada.</p>
+                            <span class="price">R$ 15,90</span>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <!-- CARD 03 -->
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop"
+                            alt="Latte Suave">
+                        <!-- TEXTO DO CARD -->
+                        <div class="card-content">
+                            <h3>Latte Suave</h3>
+                            <p>Café com muito leite, ideal para momentos relaxantes.</p>
+                            <span class="price">R$ 14,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO SOBRE A EMPRESA -->
+         <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="sobre-flex">
+                    <div class="sobre-imagem">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop" alt="Sobre a empresa">
+                    </div>
+                    <div class="sobre-texto">
+                        <h2>Paixão por Café</h2>
+                        <p>Há mais de 10 anos , o Café Aroma seleciona os melhores grãos de cafeterias artesanais so Brasil e do mundo.</p>
+                        <p>Nossa missão é proporcionar experiencias únicas através de cafés especiais ,preparados com técnica e carinho.
+                        </p>
+                        <ul class="beneficios">
+                          <li>Grãos 100% Arábica</li>
+                          <li>Torra Artesanal</li>
+                          <li>Origem Rastreável</li>
+                          <li>Comércio justo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>café Aroma</h4>
+                    <p>Os melhores café especiais para você</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatos</h4>
+                    <p>contato@cafearoma.com.br</p>
+                    <p>(11) 9999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <p>Instagram | Facebook | Twitter</p>
+                </div>
+                
+
+            </div>
+             <div class="footer-bottom">
+                    <p>&copy; 2026 Café Aroma. Todos os direitos reservados.</p>
+                </div>
+        </div>
+    </footer>
 </body>
+
 </html>
