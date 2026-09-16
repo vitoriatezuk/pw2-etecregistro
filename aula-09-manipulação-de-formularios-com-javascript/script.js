@@ -13,4 +13,4 @@ function calcularVelocidade(){
         resultado.innerHTML += `<p> Você está <strong>dentro</strong> do limite de velocidade.Dirija com cuidado!</p>`;
     }
 
-} 
+}
