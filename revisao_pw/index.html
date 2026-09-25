@@ -1,115 +1,137 @@
-<!-- 1. Conceitos Fundamentais e História do JavaScript
-Papel na Web: O HTML define o conteúdo, o CSS o design e o JavaScript é responsável pela interatividade, além de ser utilizado no back-end (ex.: Node.js) e em desenvolvimento mobile.   
+<!-- 2. Regras para Identificadores (Nomes de Variáveis)
+Pode começar com: Letras, $ ou _.   
 PDF
 
-Execução: É a principal linguagem client-side (executada no navegador/browser) e também server-side.   
+NÃO pode começar com: Números.   
 PDF
 
-Origem: Criado em 1995 por Brendan Eich a pedido da Netscape, tendo a sua padronização ocorrido em 1997.   
+Caracteres: Aceita letras, números e acentos, mas NÃO pode ter espaços.   
 PDF
 
-Evolução do Nome: Teve como nomes iniciais Mocha e LiveScript. Mudou para JavaScript por estratégia de marketing para aproveitar a popularidade do Java na época, embora sejam linguagens distintas.   
-PDF
-+ 1
-
-ECMAScript (ECMA-262): Padronização internacional criada em 1997 pela ECMA International (versões ES1, ES2, ES3, ES5, ES6, etc.).   
+Sensibilidade: É case-sensitive (diferencia maiúsculas de minúsculas, ex: nome ≠ Nome).   
 PDF
 
-Guias de Referência Oficial: Mozilla Developer Network (MDN) e ECMA International.   
+Padrão recomendado: camelCase para palavras compostas (ex: salarioLiquido).   
 PDF
 
-Tecnologias e Frameworks: jQuery, React, Angular, Vue.js, Electron e Cordova.   
-PDF
-
-2. Regras para Identificadores (Nomes de Variáveis)
-Início do Nome: Pode começar com letras, $ ou _. Nunca pode começar com números.   
-PDF
-+ 1
-
-Caracteres Permitidos: Aceita letras, números e acentos, mas não pode conter espaços.   
-PDF
-
-Sensibilidade: É case-sensitive (diferencia letras maiúsculas de minúsculas).   
-PDF
-
-Padrão de Escrita: Recomenda-se o uso de camelCase para palavras compostas.   
-PDF
-
-Restrições: Não pode utilizar palavras reservadas da linguagem (ex.: var, function, alert).   
+Palavras reservadas: Proibido usar palavras da linguagem (ex: var, function, alert).   
 PDF
 
 3. Declaração de Variáveis (var, let, const)
-var: O seu valor pode ser reatribuído e permite ser redeclarada.   
+Palavra-chave	Reatribuição de Valor	Pode ser Redeclarada?
+var	✅ Permite	
+✅ Permite 
 PDF
 
-let: O seu valor pode ser reatribuído, mas não permite redeclaração.   
+let	✅ Permite	
+❌ Não permite 
 PDF
 
-const: Não permite reatribuição de valor nem redeclaração.   
+const	❌ Não permite	
+❌ Não permite 
 PDF
 
 4. Tipos de Dados e Operador typeof
-Tipos de Dados: number (incluindo Infinity e NaN), string, boolean, null, undefined, object (incluindo Array), e function.   
+Tipos de Dados: number, string, boolean, null, undefined, object (inclui Array), e function.   
 PDF
 
-NaN (Not a Number): Ocorre quando se tenta realizar operações matemáticas com tipos incompatíveis (ex.: multiplicar um número por uma string).   
+Valores Especiais: Infinity e NaN (Not a Number - erro em operações matemáticas inválidas).   
 PDF
 
-Operador typeof: Retorna o tipo de dado de uma variável (ex.: typeof n devolve 'number').   
+Operador typeof: Retorna o tipo de dado de uma variável (ex: typeof nome -> 'string').   
 PDF
 
-5. Manipulação e Formatação de Strings
-Concatenação Tradicional: Utiliza o operador +.   
+5. Manipulação de Strings e Formatação Numérica
+Concatenação Tradicional: Usa o sinal + (ex: 'Olá ' + nome).   
 PDF
 
-Template Strings: Utilizam crases (`) e a sintaxe ${variavel} para intercalar valores e variáveis.   
+Template String: Usa crases (`) e o placeholder ${variavel} (ex: `Olá ${nome}`).   
 PDF
 
-Propriedades e Métodos de String:
+Métodos de String:
 
-s.length: Devolve a quantidade de caracteres.   
+s.length: Quantidade de caracteres.   
 PDF
 
-s.toUpperCase(): Converte o texto para letras maiúsculas.   
+s.toUpperCase(): Converte para MAIÚSCULAS.   
 PDF
 
-s.toLowerCase(): Converte o texto para letras minúsculas.   
+s.toLowerCase(): Converte para minúsculas.   
 PDF
 
-6. Tratamento e Conversão de Dados
-Entrada de Dados (window.prompt): Por padrão, qualquer dado recebido via window.prompt() é do tipo string. Somar duas strings sem converter resulta em concatenação (ex.: "4" + "2" resulta em "42").   
-PDF
-+ 1
+Tratamento e Conversão:
 
-Conversão de String para Número:
-
-Number.parseInt(n): Converte para número inteiro.   
+window.prompt() recebe sempre string.   
 PDF
 
-Number.parseFloat(n): Converte para número decimal.   
+String ➔ Número: Number.parseInt(n), Number.parseFloat(n) ou Number(n).   
 PDF
 
-Number(n): Converte automaticamente decidindo o tipo mais adequado.   
+Número ➔ String: String(n) ou n.toString().   
 PDF
 
-Conversão de Número para String:
+Formatação de Numbers:
 
-String(n) ou n.toString().   
+n.toFixed(X): Define casas decimais.   
 PDF
 
-7. Formatação de Números
-n.toFixed(X): Define o número de casas decimais X.   
+n.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }): Formata em moeda (Real, Dólar, Euro).   
 PDF
 
-n.toFixed(X).replace('.', ','): Substitui o ponto decimal por vírgula.   
+6. Manipulação do DOM (Document Object Model)
+Árvore DOM: Representação hierárquica da página Web no navegador.
+
+Parent (pai): Elemento ancestral direto na árvore.
+
+Child (filho): Elemento contido dentro de outro.
+
+Siblings (irmãos): Elementos do mesmo nível hierárquico sob o mesmo elemento pai.
+
+Estrutura básica: window ➔ document ➔ html ➔ (head, body).
+
+Métodos de Seleção de Elementos do DOM (5 modos):
+
+Por Tag: getElementsByTagName()
+
+Por ID: getElementById()
+
+Por Nome: getElementsByName()
+
+Por Classe: getElementsByClassName()
+
+Por Seletor CSS: querySelector() e querySelectorAll()
+
+7. Eventos em JavaScript
+Conceito: Ações realizadas em elementos da página (textos, imagens, divs) decorrentes da interação do utilizador ou do sistema.
+
+Principais Eventos:
+
+Rato/Mouse: click, mouseenter, mousemove, mousedown, mouseout, mouseup.
+
+Teclado e Formulário: focus, keypress.
+
+Carregamento: load.
+
+8. Funções em JavaScript
+Conceito: Blocos de código que só são executados quando explicitamente solicitados/chamados (por exemplo, ao disparar um evento).
+
+Estrutura:
+
+JavaScript
+function nomeDaAcao(parametro) {
+    // Bloco de código a executar
+}
+Nome da Função: Ligado à ação que vai executar (existem também funções anónimas, mas atribuir nome ajuda na chamada e organização).
+
+Parâmetros: Valores opcionais passados para dentro da função que serão utilizados durante a sua execução.
+
+9. Comentários de Código
+Linha única: // Comentário
+
+   
 PDF
 
-n.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }): Formata automaticamente o valor para a moeda especificada (BRL, EUR, USD).   
-PDF
+Bloco / Múltiplas linhas: /* Comentário */
 
-8. Comentários em JavaScript
-Linha única: // comentário.   
+   
 PDF
-
-Bloco ou Múltiplas linhas: /* comentário */.   
-PDF -->
